@@ -1,0 +1,95 @@
+*{ 
+    box-sizing:border-box; 
+    margin:0; 
+    padding:0; 
+}
+
+body{ 
+    background-color:#eeeeee; 
+    font-family:Arial,sans-serif; 
+}
+
+.mobile-frame{ 
+    width:100%; 
+    max-width:420px; 
+    min-height:100vh; 
+    margin:0 auto; 
+    display:flex; 
+    justify-content:center; 
+    background-color:#ffffff; 
+}
+
+.calculator{ 
+    width:100%; 
+    min-height:100vh; 
+    padding:32px 20px 40px; 
+    display:flex; 
+    flex-direction:column; 
+    background-color:#ffffff; 
+}
+
+/* KOTAK HASIL */
+.display{ 
+    width:100%; 
+    height:180px; 
+    padding:20px 25px; 
+    display:flex; 
+    align-items:flex-end; 
+    justify-content:flex-end; 
+    overflow:hidden; 
+    border-radius:24px; 
+    background-color:#ffe3ef; 
+    color:#f20d6c; 
+    font-size:70px; 
+    font-weight:500; 
+    line-height:1; 
+    white-space:nowrap; 
+}
+
+.buttons{ 
+    margin-top:40px; 
+    display:grid; 
+    grid-template-columns:repeat(4,1fr); 
+    gap:14px 12px; 
+}
+
+.btn{ 
+    width:100%; 
+    aspect-ratio:1/1; 
+    border:none; 
+    border-radius:50%; 
+    font-family:Arial,sans-serif; 
+    font-size:38px; 
+    font-weight:400; 
+    cursor:pointer; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+    transition:transform 0.08s ease,filter 0.08s ease; 
+}
+
+.btn:active{ 
+    transform:scale(0.94); 
+    filter:brightness(0.92); 
+}
+
+.number{ 
+    background-color:#f50d6d; 
+    color:#ffd4e6; 
+}
+
+.function{ 
+    background-color:#f7b1ce; 
+    color:#f20d6c; 
+}
+
+.operator{ 
+    background-color:#d695ca; 
+    color:#84427e; 
+}
+
+.function img{ 
+    width:45px; 
+    height:45px; 
+    object-fit:contain; 
+}
